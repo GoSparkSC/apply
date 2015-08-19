@@ -2,7 +2,7 @@
 
 normalize-css()
 
-$content-area = 90%
+$content-area = 92%
 
 body
     background white
@@ -57,14 +57,39 @@ body
                 text-align left
 
                 h2
-                    padding 10px 0 0 20px
+                    padding 5px 0 0 20px
 
                 p
                     padding 15px 0 0 20px
 
 .calltoaction
+    width 100%; height 440px
+    position relative
+    overflow hidden
+
+    .background
+        width 2048px
+        position absolute
+        left -248px
+        z-index -999
+
     .wewantyouhere
+        position absolute
+        top 100px; left 140px
+        font-size 28px
+        text-align center
         text-transform uppercase
+        letter-spacing 1px
+        color #333
+        z-index 1
+    .location
+        position absolute
+        top 200px; left 148px
+    .spark
+        width 160px
+        position absolute
+        right 40px; bottom 20px
+        z-index 1
 
 @media only screen and (max-width: 480px)
     .committees
