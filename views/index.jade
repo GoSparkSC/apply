@@ -6,7 +6,7 @@ block content
             section.splash
             section.committees
                 for committee in site.committees
-                    div(id="#{committee.id}" class="commitee #{committee.id}")
+                    div(id="#{committee.id}" class="committee #{committee.id}")
                         if committee.text_first
                             div(class = "left lg")
                                 h2 #{committee.title}

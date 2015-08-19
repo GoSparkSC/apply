@@ -5,6 +5,7 @@ normalize-css()
 $content-area = 92%
 
 body
+    font-family 'Proxima Nova'
     background white
 
 .committees
@@ -26,8 +27,9 @@ body
             width 25%
 
             img
-                width 90%
+                width 67%
                 margin 0 auto
+                display block
 
         .lg
             width 75%
@@ -42,7 +44,8 @@ body
 
             p
                 margin 0; padding 0
-                line-height 24px
+                font-size 16px
+                line-height 28px
 
             &.left
                 text-align right
@@ -51,7 +54,7 @@ body
                     padding 10px 20px 0 0
 
                 p
-                    padding 15px 20px 0 0
+                    padding 20px 20px 0 0
 
             &.right
                 text-align left
@@ -60,7 +63,7 @@ body
                     padding 5px 0 0 20px
 
                 p
-                    padding 15px 0 0 20px
+                    padding 20px 0 0 20px
 
 .calltoaction
     width 100%; height 440px
@@ -90,6 +93,23 @@ body
         position absolute
         right 40px; bottom 20px
         z-index 1
+
+.agf
+    .sm
+        img
+            width 86% !important
+.scf
+    .sm
+        img
+            width 48% !important
+.usch
+    .sm
+        img
+            width 35% !important
+.techla
+    .sm
+        img
+            width 70% !important
 
 @media only screen and (max-width: 480px)
     .committees
