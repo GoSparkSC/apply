@@ -1,6 +1,7 @@
 {
   "name": "apply",
   "description": "Introducing applicants to Spark SC and its committees",
+  "repository": "https://github.com/GoSparkSC/apply.git",
   "dependencies": {
     "autoprefixer-stylus": "0.7.x",
     "axis": "0.4.x",
@@ -11,6 +12,7 @@
     "jstransformer-marked": "0.0.x",
     "marked": "0.3.x",
     "rupture": "0.6.x",
-    "stylus": "0.51.x"
+    "stylus": "0.51.x",
+    "dynamic-content": "0.3.x"
   }
 }
