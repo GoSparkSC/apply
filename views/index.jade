@@ -5,8 +5,8 @@ block content
         div.sections
             section.splash
             section.committees
-                for committee in site.committees 
-                    div(id="#{committee.id}" class="committee #{committee.id}")
+                for committee in site.committees.all().sort(function(a,b){var x = a['order']; var y = b['order']; return ((x < y) ? -1 : ((x > y) ? 1 : 0));})
+                    div(id="#{committee.id}" class="committee #{committee.id}" onload="console.log(#{site.committees});")
                         if committee.text_first
                             div(class = "left lg")
                                 h2 #{committee.title}
