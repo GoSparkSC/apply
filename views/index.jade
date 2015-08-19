@@ -6,20 +6,20 @@ block content
             section.splash
             section.committees
                 for committee in site.committees
-                    div HEY
                     div.committee(id="#{committee.id}")
                         if committee.text_first
-                            div(class = "left #{committee.text_size}")
+                            div(class = "left lg")
                                 h2 #{committee.title}
                                 p #{committee.description}
-                            div(class = "right #{committee.logo_size}")
+                            div(class = "right sm")
                                 img.logo(src="#{committee.logo}")
                         else
-                            div(class = "left #{committee.logo_size}")
+                            div(class = "left sm")
                                 img.logo(src="#{committee.logo}")
-                            div(class = "right #{committee.text_size}")
+                            div(class = "right lg")
                                 h2 #{committee.title}
                                 p #{committee.description}
+                                
             section.calltoaction
                 img.background
                 h2.wewantyouhere
