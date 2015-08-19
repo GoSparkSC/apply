@@ -1,7 +1,79 @@
 @import '_settings'
 
 normalize-css()
-base()
+
+$content-area = 90%
 
 body
-  padding: 50px
+    background white
+
+.committees
+    width $content-area
+    margin 0 auto; padding 30px 0
+
+    .committee
+        width 100%
+        padding 20px 0
+        display block
+        font-size 0
+
+        .sm, .lg
+            display inline-block
+            vertical-align top
+            font-size $font-size /* default */
+
+        .sm
+            width 25%
+
+            img
+                width 90%
+                margin 0 auto
+
+        .lg
+            width 75%
+            color #333
+
+            h2
+                margin 0; padding 0
+                font-size 26px
+                font-weight 700
+                letter-spacing 1px
+                text-transform uppercase
+
+            p
+                margin 0; padding 0
+                line-height 24px
+
+            &.left
+                text-align right
+
+                h2
+                    padding 10px 20px 0 0
+
+                p
+                    padding 15px 20px 0 0
+
+            &.right
+                text-align left
+
+                h2
+                    padding 10px 0 0 20px
+
+                p
+                    padding 15px 0 0 20px
+
+.calltoaction
+    .wewantyouhere
+        text-transform uppercase
+
+@media only screen and (max-width: 480px)
+    .committees
+        .committee
+            .sm, .lg
+                width 100%
+
+                &.left, &.right
+                    text-align center
+
+                    h2, p
+                        padding-left 0; padding-right 0
