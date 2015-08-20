@@ -4,7 +4,10 @@ block content
     body
         div.sections
             section.splash
+                img(src="img/spark_icon.svg" alt="Spark SC")
+                h1 Apply
             section.committees
+                p.info Want to #[span.highlight ignite innovation] with us? Here are some of the things #[span.highlight YOU] could be working on:
                 for committee in site.committees.all().sort(function(a,b){var x = a['order']; var y = b['order']; return ((x < y) ? -1 : ((x > y) ? 1 : 0));})
                     div(id="#{committee.id}" class="committee #{committee.id}" onload="console.log(#{site.committees});")
                         if committee.text_first
