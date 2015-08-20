@@ -4,17 +4,57 @@ normalize-css()
 
 $content-area = 92%
 
+html, body
+    width 100%; height 100%
+
 body
-    font-family 'Proxima Nova'
+    // TODO: load Proxima Nova
+    font-family 'Proxima Nova', Helvetica Neue, Helvetica, Arial, sans-serif
     background white
+
+.sections
+    width 100%; height 100%
+
+.splash
+    width 100%; height 100%
+    position relative
+    background rgba(253,189,21,1)
+    display flex
+    align-items center
+    justify-content center
+
+    img
+        width 100px
+    h1
+        margin 0 0 0 35px; padding 6px
+        font-size 30px
+        text-transform uppercase
+        letter-spacing 1px
+        vertical-align middle
+        color white
 
 .committees
     width $content-area
     margin 0 auto; padding 100px 0px 40px 0px
 
+    .info
+        margin 0; padding 0 0 40px 0
+        text-align center
+        font-size 22px
+        font-style italic
+        line-height 34px
+        color #373939
+
+        .highlight
+            font-weight 700
+            color rgba(253,189,21,1)
+
+            &.black
+                color #373939
+
     .committee
         width 100%
-        padding 35px 0
+        padding 25px 0
         display block
         font-size 0
 
@@ -27,8 +67,8 @@ body
             width 25%
 
             img
-                width 50%
-                margin 0 auto
+                width 55%
+                margin 0 auto 20px auto
                 display block
                 border-radius 9999px
                 background rgba(253,189,21,1)
@@ -38,7 +78,7 @@ body
 
             h2
                 margin 0; padding 0
-                padding-top 20px
+                padding-top 10px
                 font-size 28px
                 font-weight 700
                 letter-spacing 2px
@@ -85,23 +125,21 @@ body
     .wewantyouhere
         position absolute
 
-        // top 85px; left 120px //head
         font-size 32px
-        top 210px; left 120px // mail
-        // font-size 28px
+        top 210px; left 110px // mail
 
         text-align center
         text-transform uppercase
-        line-height 38px
+        line-height 40px
         letter-spacing 1px
         color white
+        text-shadow 1px 1px 5px rgba(0,0,0,0.25)
         z-index 1
 
     .location
-        width 190px
+        width 195px
         position absolute
-        // top 175px; left 108px //head
-        top 310px; left 148px //mail
+        top 310px; left 108px //mail
 
     .spark
         width 160px
