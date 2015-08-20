@@ -10,7 +10,7 @@ body
 
 .committees
     width $content-area
-    margin 0 auto; padding 50px 0
+    margin 0 auto; padding 100px 0
 
     .committee
         width 100%
@@ -27,44 +27,49 @@ body
             width 25%
 
             img
-                width 35%
+                width 50%
                 margin 0 auto
                 display block
+                border-radius 9999px
+                background rgba(253,189,21,1)
 
         .lg
             width 75%
-            color #333
 
             h2
                 margin 0; padding 0
+                padding-top 20px
                 font-size 28px
                 font-weight 700
-                letter-spacing 1px
+                letter-spacing 2px
                 text-transform uppercase
+                color #373939
 
             p
                 margin 0; padding 0
+                padding-top 20px
                 font-size 16px
                 line-height 32px
                 letter-spacing 1px
+                color #444
 
             &.left
                 text-align right
 
                 h2
-                    padding 10px 20px 0 0
+                    padding-right 20px
 
                 p
-                    padding 20px 20px 0 0
+                    padding-right 20px
 
             &.right
                 text-align left
 
                 h2
-                    padding 5px 0 0 20px
+                    padding-left 20px
 
                 p
-                    padding 20px 0 0 20px
+                    padding-left 20px
 
 .calltoaction
     width 100%; height 440px
@@ -74,47 +79,51 @@ body
     .background
         width 2048px
         position absolute
-        left -248px
+        left -258px
         z-index -999
 
     .wewantyouhere
         position absolute
-        top 100px; left 140px
-        font-size 28px
+        top 85px; left 120px
+        font-size 32px
         text-align center
         text-transform uppercase
+        line-height 38px
         letter-spacing 1px
-        color #333
+        color white
         z-index 1
+
     .location
+        width 190px
         position absolute
-        top 200px; left 148px
+        top 175px; left 108px
+
     .spark
         width 160px
         position absolute
         right 40px; bottom 20px
         z-index 1
 
-.pitches
-    .sm
-        img
-            width 70% !important
-.agf
-    .sm
-        img
-            width 90% !important
-.scf
-    .sm
-        img
-            width 48% !important
-.usch
-    .sm
-        img
-            width 35% !important
-.techla
-    .sm
-        img
-            width 70% !important
+// .pitches
+//     .sm
+//         img
+//             width 70% !important
+// .agf
+//     .sm
+//         img
+//             width 90% !important
+// .scf
+//     .sm
+//         img
+//             width 48% !important
+// .usch
+//     .sm
+//         img
+//             width 35% !important
+// .techla
+//     .sm
+//         img
+//             width 70% !important
 
 @media only screen and (max-width: 480px)
     .committees
