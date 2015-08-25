@@ -33,86 +33,105 @@ body
         vertical-align middle
         color white
 
-.committees
-    width $content-area
-    margin 0 auto; padding 100px 0px 40px 0px
+.header
+    height 400px
+    margin-bottom 50px
 
-    .info
-        margin 0; padding 0 0 40px 0
+    .rowcustom
         text-align center
-        font-size 22px
-        font-style italic
-        line-height 34px
-        color #373939
 
-        .highlight
-            font-weight 700
-            color rgba(253,189,21,1)
+        img
+            width 400px
+            max-width 100%
+            margin-top 100px 
 
-            &.black
-                color #373939
+        .title
+            margin-top: 50px;
+            font-size: 2.2rem;
+            letter-spacing: 1px
+            color white
 
-    .committee
-        width 100%
-        padding 25px 0
+.information
+    font-size 2.2rem
+    text-align center
+    letter-spacing 0.5px
+    color #FEBF0F
+
+    a
+        margin-top 20px
         display block
-        font-size 0
+        text-decoration none
 
-        .sm, .lg
-            display inline-block
-            vertical-align top
-            font-size $font-size /* default */
+    button
+        margin 20px
+        border-color #FEBF0F
+        background #FEBF0F
+        color #FFF
 
-        .sm
-            width 25%
+        border-radius 0
+        border-width 1px
+        border-style solid
+        border-color rgba(0, 0, 0, .2)
+        box-shadow 2px 2px 2px rgba(0,0,0,0.25)
 
-            img
-                width 55%
-                margin 0 auto 20px auto
-                display block
-                border-radius 9999px
-                background rgba(253,189,21,1)
+    button:hover
+        color #EEE
 
-        .lg
-            width 75%
+    .closed
+        margin-top 20px
+        padding 5px
+        border 1px solid white
+        color white
+        text-transform uppercase
 
-            h2
-                margin 0; padding 0
-                padding-top 10px
-                font-size 28px
-                font-weight 700
-                letter-spacing 2px
-                text-transform uppercase
-                color #373939
+    hr
+        width 320px
+        border 0
+        border-bottom 1px solid #555
 
-            p
-                margin 0; padding 0
-                padding-top 20px
-                font-size 16px
-                line-height 32px
-                letter-spacing 1px
-                color #444
+.committee 
+    margin-bottom 40px
+    padding 30px 20px
+    // border-radius 4px
+    background #FEBF0F
+    box-shadow 2px 2px 2px rgba(0,0,0,0.15)
 
-            &.left
-                text-align right
+    border-width 1px
+    border-style solid
+    border-color rgba(0, 0, 0, .25)
 
-                h2
-                    padding-right 20px
+    background-size 60%
+    // background-size cover
+    background-position center 
+    background-repeat no-repeat
+    text-align center
 
-                p
-                    padding-right 20px
+    min-height 250px
 
-            &.right
-                text-align left
+    h2
+        font-weight 800
+        font-size 1.7rem
+        letter-spacing 1px
+        color black
+        
+    p
+        font-size 1.4rem
+        letter-spacing 1px
+        color black
+        visibility hidden
 
-                h2
-                    padding-left 20px
+    &:hover
+        background-color white
+        background-image none !important
 
-                p
-                    padding-left 20px
+        h2
+            // color #febf0f
+
+        p
+            visibility visible
 
 .calltoaction
-    width 100%; height 540px
+    width 100%; height 440px
     position relative
     overflow hidden
 
@@ -125,8 +144,9 @@ body
     .wewantyouhere
         position absolute
 
+        font-family 'Proxima Nova', Helvetica Neue, Helvetica, Arial, sans-serif
         font-size 32px
-        top 210px; left 110px // mail
+        top 110px; left 110px
 
         text-align center
         text-transform uppercase
@@ -139,73 +159,13 @@ body
     .location
         width 195px
         position absolute
-        top 310px; left 108px //mail
+        top 210px; left 108px 
 
     .spark
         width 160px
         position absolute
         right 40px; bottom 20px
         z-index 1
-
-    .email
-        padding 8px
-        text-align center
-        font-size 20px
-        font-style italic
-        border-width 1px
-        border-style solid
-        color #FFAD0B
-        outline none
-
-    .button 
-        background-color #FDBE14
-        font-weight 500
-        font-size 20px
-        border none
-        padding 9px
-
-    .clear
-        display inline-block
-
-    .mc_embed_signup
-        text-align center
-        margin-bottom 100px
-
-        ::-webkit-input-placeholder  /* WebKit, Blink, Edge */
-            color #FDBE14
-            opacity  1
-
-        :-moz-placeholder  /* Mozilla Firefox 4 to 18 */
-            color #FDBE14
-            opacity  1
-
-        ::-moz-placeholder  /* Mozilla Firefox 19+ */
-            color #FDBE14
-            opacity  1
-
-        :-ms-input-placeholder /* Internet Explorer 10-11 */
-            color #FDBE14
-
-// .pitches
-//     .sm
-//         img
-//             width 70% !important
-// .agf
-//     .sm
-//         img
-//             width 90% !important
-// .scf
-//     .sm
-//         img
-//             width 48% !important
-// .usch
-//     .sm
-//         img
-//             width 35% !important
-// .techla
-//     .sm
-//         img
-//             width 70% !important
 
 @media only screen and (max-width: 480px)
     .committees
