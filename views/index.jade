@@ -3,28 +3,28 @@ extends layout
 block content
     body
         div.sections
-            section.all
+            section.all(style="background-image: url(/img/background.jpg); background-size: cover")
                 section.header
                     div.container
                         div.rowcustom
-                            img(src="img/spark.svg" alt="Spark SC")
-                            div.title Committee Information &middot; <span class="date">Spring 2015</span>
+                            img(src="img/letterhead-full.svg" alt="Spark SC")
+                            div.title Committee Information &middot; <span class="date">Fall 2015</span>
 
             section.content
                 div.container
                     div.row
                         div.information
                             |Spark SC Committees are your opportunity to get involved with the planning and execution of some of the largest events and initiatives on campus. We're looking for talented student leaders to join our team and help us do great things.
-                            a(href="https://sparksc.typeform.com/to/CwxhVv")
+                            a(href="http://sparksc.org/apply/form/")
                                 <button>Apply Here</button>
                             hr
 
 
                 div.container
 
-                    div(style="text-align:center; padding-bottom:20px;")
-                        p(style="margin:auto; font-size: 28px; font-weight: 600; font-style: italic").work What will <span style="font-weight: 800; color: #febf0f;">you</span> work on?
-                        p.inmind(style="font-weight: 600") Here are some committees we had in mind:
+                    div(style="text-align:center; padding-bottom:20px; color:#383938;")
+                        p(style="margin:auto; font-size: 28px; font-weight: 600; font-style: italic;").work What will <span style="font-weight: 800; color: #febf0f;">you</span> work on?
+                        p.inmind(style="font-weight: 600;") Here are some committees we had in mind:
 
                     for committee, index in site.committees.all().sort(function(a,b){var x = a['order']; var y = b['order']; return ((x < y) ? -1 : ((x > y) ? 1 : 0));})
                         if (index % 3 == 0)
@@ -68,7 +68,7 @@ block content
 
             })( jQuery, window, document );
 
-            $('.all').parallax({imageSrc: '/img/background.jpg'});
+            //- $('.all').parallax({imageSrc: '/img/background.jpg'});
 
         script(type='text/javascript').
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
